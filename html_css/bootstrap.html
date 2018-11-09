@@ -9,6 +9,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/script.js">
+
+</script>
 </head>
 <body>
   <div class="container">
@@ -16,34 +19,54 @@
           <h2>ICTA </h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, ut odit libero itaque ullam nihil perferendis deleniti dolore, nemo doloremque illo suscipit mollitia sed? Eius voluptatem quod magni repellat at?</p>
       </div>
-      <div class="card bg-primary text-white">
-      <div class="row">
-          <div class="col-sm-6">
+<form>
+        
+                                  <div class="card bg-primary text-white">
                 <div class="row">
-                        <div class="col-sm-4">name</div>
-                        <div class="col-sm-4"><input type="text"class="form-control"></div>
-                        
-                        </div>
-                        <br>
-                        <div class="row">
-                              <div class="col-sm-4">roll no</div>
-                              <div class="col-sm-4"><input type="text"class="form-control"></div>
-                  
-                              </div>
-                              <br>
-                  
-                              <div class="row">
-                                      <div class="col-sm-4">admission number</div>
-                                      <div class="col-sm-4"><input type="text"class="form-control"></div>
-                          
-                                      </div>
-                  <br>
-                              <div class="row">
-                                      <div class="col-sm-4"></div>
-                                      <div class="col-sm-4"><button class="btn btn-info">submit</div>
-                                      </div>
-          </div>
-      </div>
-  </div>  </div></div>
+                    <div class="col-sm-6">
+                          <div class="row">
+                                  <div class="col-sm-4">name</div>
+                                  <div class="col-sm-4"><input type="text"class="form-control"id="getname"/></div>
+                                  
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                        <div class="col-sm-4">no</div>
+                                        <div class="col-sm-4"><input type="text"class="form-control"id="getroll"patern="[9876]{1}[0-9]{9}"/></div>
+                                  </div>
+                                        <br>
+                            
+                                        <div class="row">
+                                                <div class="col-sm-4">admissionnumber</div>
+                                                <div class="col-sm-4"><input type="text"class="form-control"id="getad"/></div>
+                                    
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                        <div class="col-sm-4">dist</div>
+                                                        <select id="d">
+                                                            <option value="kasaragod">kasaragod</option>
+                                                            <option value="kannur">kannur</option>
+                                                            <option value="kozhikod">calicut</option>
+                                                        </select>
+                                                        
+                                            
+                                                        </div>
+                                                        <br>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">age</div>
+                                                            <div class="col-sm-4"><input type="text"class="form-control"id="getage"/></div>
+                                                
+                                                            </div>
+                    </div>
+                            <br>
+                                        <div class="row">
+                                                <div class="col-sm-4"></div>
+                                                <div class="col-sm-4"><button class="btn btn-info" onclick="Read();">submit</div>
+                                                </div>
+                    </div>
+                </div>
+            </div>
+</form>  </div></div>
 </body>
 </html>
